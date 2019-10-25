@@ -32,10 +32,10 @@ while True:
 
 		print rawInHex.count('f') # output in case jammed packet
 
-        if (rawInHex.count('f') < 350): # filter the jamming signal
-            print str(rawInHex) # print key fob packet
-            rawCapture.append(rawInHex) # add key fob to array
-            i= i +1
+        	if (rawInHex.count('f') < 350): # filter the jamming signal
+            		print str(rawInHex) # print key fob packet
+            		rawCapture.append(rawInHex) # add key fob to array
+            		i= i +1
 	except ChipconUsbTimeoutException: # had to add this yard stick one kept timming out
 		pass
 
